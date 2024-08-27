@@ -53,22 +53,115 @@ h4{
     margin-bottom: 30px;
     cursor:pointer;
 }
-
-
-
-
-
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.s1{
+    display: flex;
+    align-items: center;
+}
+.image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.list{
+    padding: 70px ;
+}
+.Quick{
+    color: #727272;
+}
+.Features{
+    color: #FF900E;
+}
+.s3{
+    margin-top: 100px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.box{
+    border: 2px solid rgba(255, 144, 14, 1) ;
+    border-radius: 10px;
+    padding: 30px;
+}
+.box:hover{
+    background-color: rgba(255, 144, 14, 0.1) ;
+}
+.d{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.h4{
+    font-size: 1rem;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 10px;
+}
+.our{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.google{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    max-width: 1440px;
+    background-color: rgba(255, 144, 14, 0.1) ;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
 
 @media screen and (max-width:576px) {
     header{
         padding: 10px 20px;
     }
-    nav{
+    nav,
+    .s1
+    /* .google */
+    {
         flex-direction: column;
     }
     nav li{
         padding: 10px;
     }
+    .list{
+        padding: 10px;
+    }
+    .image{
+        grid-template-columns: 1fr;
+    }
+    .boxes{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center; 
+        gap: 20px;
+    }
+    .box{
+        padding:10px;
+    }
+    main{
+        margin: 70px 10px;
+        text-align: center;
+    }
+    .google{
+        /* gap: 5px; */
+    }
+    .google img{
+        width: 10%;
+    }
+
 }
 @media screen and (min-width:576px) and (max-width:992px){
     header{
@@ -82,5 +175,17 @@ h4{
     .banner-title{
         font-size: 3rem;
         font-weight: 600;
+    }
+    .s1,nav{
+        flex-direction: column;
+    }
+    .list{
+        text-align: center;
+    }
+    main{
+        text-align: center;
+    }
+    .google img{
+        width: 10%;
     }
 }
