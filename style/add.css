@@ -60,12 +60,58 @@ main{
 .s1{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
+.s2{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.s2 h2{
+    font-size: 1.2rem;
+}
+.dexktop{
+    background-color: rgba(255, 255, 255, 1) ;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 50px;
+    padding:30px;
+}
+.love h1{
+    border-left: 5px solid #FF900E ;
+    padding-left: 20px ;
+}
+.bbb{
+    background-color: #FF900E;
+    width: 340px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+.ten{
+    font-size: 4rem;
+    font-weight: bold ;
+    color: #ffffff;
+    margin: 0;
+}
+.ex{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0;
+}
+.pics img{
+    height: 90%;
+    margin-left: 50px;
+}
+
 .list{
     padding: 70px ;
 }
@@ -110,7 +156,7 @@ main{
 .google{
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 footer{
     max-width: 1440px;
@@ -127,8 +173,8 @@ footer{
         padding: 10px 20px;
     }
     nav,
-    .s1
-    /* .google */
+    .s1,
+    .s2
     {
         flex-direction: column;
     }
@@ -161,6 +207,17 @@ footer{
     .google img{
         width: 10%;
     }
+    .pics img{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .bbb{
+        width: 300px;
+        padding: 20px;
+        position: relative;
+        bottom: 50px;
+    }
 
 }
 @media screen and (min-width:576px) and (max-width:992px){
@@ -176,7 +233,7 @@ footer{
         font-size: 3rem;
         font-weight: 600;
     }
-    .s1,nav{
+    .s1,nav,.s2{
         flex-direction: column;
     }
     .list{
